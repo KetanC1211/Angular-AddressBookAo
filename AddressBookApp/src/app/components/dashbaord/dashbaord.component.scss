@@ -40,19 +40,21 @@
   }
   button {
     font: normal normal normal 22px/29px Roboto;
+    width: 215px;
+    height: 55px;
     letter-spacing: 0px;
     color: white;
     opacity: 1;
     background-color: #008CFF;
     border: none;
     border-radius: 5px;
-    padding: 5px 18px;
     outline: none;
     cursor: pointer;
     text-decoration: none;
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   
   .main-content {
@@ -88,9 +90,14 @@
   
   .table {
     width: 100%;
-    border-spacing: 0 5px;
+    border-spacing: 0px 10px;
     min-width: 800px;
     font-size: 10px;
+    font: normal normal 600 18px/22px Lato;
+    letter-spacing: 0px;
+    color: #3D3D3D;
+    opacity: 1;
+
   }
 
   th {
@@ -106,8 +113,11 @@
     padding: 0px;
   }
  td, tr {
+    margin: 0px;
+    padding: 0px;
     height: 65px;
   }
+
   tr:not(:first-child) {
     width: 1549px;
     height: 65px;
@@ -123,59 +133,55 @@
     letter-spacing: 0px;
     color: #3d3d3d;
     opacity: 1;
-    text-align: inherit;
+    justify-content: center;
   }
   
   td:first-child {
     display: flex;
     align-items: center;
-  }
-  
-  td img:first-child {
-    margin-right: 10px;
-  }
-  .delete-img{
-    width: 24px;
-    height: 28px;
-    margin-left: 5px;
-    /* UI Properties */
-    background: #658292 0% 0% no-repeat padding-box;
-    opacity: 1;
-  }
-  .edit-img{
-    width: 14px;
-    height: 14px;
-    /* UI Properties */
-    background: #658292 0% 0% no-repeat padding-box;
-    opacity: 1;
-  }
-  td img {
-    cursor: pointer;
-  }
-  
-  .action-icon img{
-    margin-right: 5px;
-  }
+  }  
+
   .tb-header-actions{
     text-align: center;
   }
-
-  .pic{
-    padding-top: 25x;
-    justify-content: center;
-  }
-  th.pic{
-    width: 100px;
-  }
   th{
     border: none;
+    background-color: #F7F7F7;
+    font: normal normal bold 18px/22px Lato;
+    letter-spacing: 0px;
+    color: #658292;
+    text-transform: capitalize;
+    opacity: 1;
+    // padding-top: 40px;
+    vertical-align: bottom;
   }
   .action-icon{
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 27px;
     align-self: center;
     width: 150px;
+    
+  }
+  .delete-icon{
+    width: 14px;
+    height: 18px;
+    background: #658292 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+  .delete-icon{
+    width: 14px;
+    height: 14px;
+    background: #658292 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+
+  tr mat-icon {
+    cursor: pointer;
+  }
+  
+  th.table-name-column{
+    text-align: center;
   }
   .table-name-column{
     width: 230px;
