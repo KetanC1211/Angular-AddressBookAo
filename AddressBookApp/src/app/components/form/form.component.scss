@@ -1,0 +1,102 @@
+body{
+    margin:0px;
+    height: 100%;
+}
+.main-formContent{
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content:center ;
+    align-items:center ;
+}
+form{
+    width: 1067px;
+    height: 803px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #F5F5F5;
+    border-radius: 8px;
+    opacity: 1;
+    margin-top: 67px;
+    margin-bottom: 104px;
+}
+header{
+    height: 108px;    
+    background: #008cff;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+header mat-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F5F5F5;
+    height: 44px;
+    width: 44px;
+    font-size: 44px;
+}
+.header-text{
+    margin-inline: 275px;
+    font-size: 37px;
+    color: #FFFFFF;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    padding-top: 55px;
+    padding-left: 127px;
+    padding-right: 132px;
+    padding-bottom: 82px;
+}
+
+.text-field{
+    display: flex;
+    flex-direction: column;
+    width:808px;
+    height: 89px;
+}
+.add-field{
+    display: flex;
+    flex-direction: column;
+    width:808px;
+    height: 137px;
+}
+.city-state-zip{
+    display: flex;
+    justify-content: space-around;
+    width:808px;
+    height: 82px;
+}
+.commonAddField{
+    display: flex;
+    flex-direction: column;
+    width:250px;
+    height: 82px;
+}
+.button{
+    display: flex;
+    gap:40px;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 26px ;
+    letter-spacing: 0px;
+    color: #42515F;
+    opacity: 1; 
+}
+.submitButton{
+    width: 180px;
+    height: 53px;
+    background: #E2E2E2 0% 0% no-repeat padding-box;
+    border: 1px solid #969696;
+    border-radius: 5px;
+    opacity: 1;
+}
+.resetButton{
+    width: 180px;
+    height: 53px;
+    background: #E2E2E2 0% 0% no-repeat padding-box;
+    border: 1px solid #969696;
+    border-radius: 5px;
+    opacity: 1;
+}

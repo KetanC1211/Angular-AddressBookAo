@@ -9,7 +9,9 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { FormComponent } from './components/form/form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
-import { Router } from '@angular/router';
+import {MatInputModule} from '@angular/material/input';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { Router } from '@angular/router';
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
+    MatInputModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule
   ],
   providers: [],

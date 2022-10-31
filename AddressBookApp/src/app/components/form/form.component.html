@@ -1,2 +1,46 @@
 <app-header></app-header>
-<p>form works!</p>
+<div class="main-formContent">
+    <form [formGroup]="addContact" (ngSubmit)="addContactDetails()">
+        <header>
+            <div class="header-text">
+            PERSON ADDRESS FORM
+            </div>
+            <mat-icon>cancel</mat-icon>
+        </header>
+        <div class="input-field">
+            <div class="text-field">
+                <label for="fullName">Full Name</label>
+                <input type="text" name="fullName" formControlName="fullName">
+            </div>
+            <div class="text-field">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" name="phoneNumber" formControlName="phoneNumber">
+            </div>
+            <div class="add-field">
+                <label for="address">Address</label>
+                <input type="text" name="address" formControlName="address">
+            </div>
+            <div class="city-state-zip">
+                <div class="commonAddField">
+                    <label for="city">City</label>
+                    <input type="text" name="city" formControlName="city">                    
+                </div>
+                <div class="commonAddField">
+                    <label for="state">State</label>
+                    <input type="text" name="state" formControlName="state">    
+                </div>
+                <div class="commonAddField">
+                    <label for="zipCode">Zip Code</label>
+                    <input type="text" name="zipCode" formControlName="zipCode">  
+                </div>
+                
+            </div>
+            <div class="button">
+                <button type="submit" class="submitButton" >Add</button>        
+                <!-- <button type="submit" class="button submitButton" >Update</button> -->
+                <button type="reset" class="resetButton">Reset</button>
+            </div>
+
+        </div>
+    </form>
+</div>
