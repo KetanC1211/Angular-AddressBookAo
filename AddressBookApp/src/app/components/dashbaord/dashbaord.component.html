@@ -1,1 +1,40 @@
-<p>dashbaord works!</p>
+<app-header></app-header>
+<div class="main-content">
+    <div class="header-content">
+        <div class="contact-detail-text">
+            Person Details 
+        </div>
+        <button mat-button (click) = "btnClick()">
+            <mat-icon>add</mat-icon>
+            Add user
+        </button>
+    </div>
+    <div class="table-main">
+        <table class="table" id="display">
+            <tr>
+                <th class="table-name-column">Full Name</th>
+                <th class="table-address-column"> Address </th>
+                <th class="table-city-column"> City </th>
+                <th class="table-state-column"> State </th>
+                <th class="table-zipCode-column"> Zip Code </th>
+                <th class="table-phoneNumber-column">  Phone Number</th>
+                <th class="tb-header-actions"></th>
+            </tr>
+
+            <tr>
+                <td class="table-name-column"> Ketan Chindarkar </td>
+                <td class="table-address-column"> 13/A Cresta Appt Hill Road </td>
+                <td class="table-city-column"> Mumbai </td>
+                <td class="table-state-column"> Maharashtra </td>
+                <td class="table-zipCode-column"> 400015 </td>
+                <td class="table-phoneNumber-column"> 7898564123 </td>
+                <td class="action-icon tb-header-actions" >
+                    <img  class="delete-img" style="margin-right: 20px;"  alt="delete" src="/assets/icons/delete-black-18dp.svg">
+                    <img  class="edit-img" alt="Edit" src="/assets/icons/create-black-18dp.svg" >
+                </td> 
+            </tr>
+            
+        </table>
+    </div>
+</div>
+
