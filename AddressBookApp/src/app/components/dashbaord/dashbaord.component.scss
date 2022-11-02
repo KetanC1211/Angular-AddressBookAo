@@ -135,11 +135,7 @@
     opacity: 1;
     justify-content: center;
   }
-  
-  td:first-child {
-    display: flex;
-    align-items: center;
-  }  
+ 
 
   .tb-header-actions{
     text-align: center;
@@ -157,22 +153,23 @@
   }
   .action-icon{
     display: flex;
-    justify-content: center;
     gap: 27px;
-    align-self: center;
+    align-items: center;
     width: 150px;
     
   }
   .delete-icon{
-    width: 14px;
-    height: 18px;
-    background: #658292 0% 0% no-repeat padding-box;
+    width: 23px;
+    height: 25px;
+    font-size: 18px;
+    // background: #658292 0% 0% no-repeat padding-box;
     opacity: 1;
   }
-  .delete-icon{
-    width: 14px;
-    height: 14px;
-    background: #658292 0% 0% no-repeat padding-box;
+  .edit-icon{
+    width: 23px;
+    height: 25px;
+    font-size: 18px;
+    // background: #658292 0% 0% no-repeat padding-box;
     opacity: 1;
   }
 
@@ -180,7 +177,7 @@
     cursor: pointer;
   }
   
-  th.table-name-column{
+  th.table-name-column, td.table-name-column{
     text-align: center;
   }
   .table-name-column{

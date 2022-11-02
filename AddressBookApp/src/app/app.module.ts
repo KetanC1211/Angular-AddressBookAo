@@ -8,9 +8,13 @@ import { DashbaordComponent } from './components/dashbaord/dashbaord.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { FormComponent } from './components/form/form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatIconModule} from '@angular/material/icon';
-import {MatInputModule} from '@angular/material/input';
+import { MatIconModule} from '@angular/material/icon';
+import { MatInputModule} from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatSelectModule} from '@angular/material/select';
+import { HttpClientModule,HttpClient } from '@angular/common/http';
+import { Route } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 
 @NgModule({
@@ -27,7 +31,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatIconModule,
     MatInputModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    MatSelectModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

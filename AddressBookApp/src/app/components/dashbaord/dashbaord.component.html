@@ -3,7 +3,7 @@
     <div class="header-content">
         <div class="contact-detail-text">
             Person Details 
-        </div>
+        </div>  
         <button mat-button (click) = "btnClick()">
             <mat-icon>add</mat-icon>
             Add user
@@ -12,7 +12,7 @@
     <div class="table-main">
         <table class="table" id="display">
             <tr>
-                <th class="table-name-column">Full Name</th>
+                <th class="table-name-column">Full Name </th>
                 <th class="table-address-column"> Address </th>
                 <th class="table-city-column"> City </th>
                 <th class="table-state-column"> State </th>
@@ -20,17 +20,18 @@
                 <th class="table-phoneNumber-column">  Phone Number</th>
                 <th class="tb-header-actions"></th>
             </tr>
-
-            <tr>
-                <td class="table-name-column"> Ketan Chindarkar </td>
-                <td class="table-address-column"> 13/A Cresta Appt Hill Road </td>
-                <td class="table-city-column"> Mumbai </td>
-                <td class="table-state-column"> Maharashtra </td>
-                <td class="table-zipCode-column"> 400015 </td>
-                <td class="table-phoneNumber-column"> 7898564123 </td>
+            
+            
+            <tr *ngFor="let contact of allcontactList">
+                <td class="table-name-column"> {{contact.fullName}} </td>
+                <td class="table-address-column"> {{contact.address}} </td>
+                <td class="table-city-column"> {{contact.city}} </td>
+                <td class="table-state-column"> {{contact.state}} </td>
+                <td class="table-zipCode-column"> {{contact.zip}} </td>
+                <td class="table-phoneNumber-column"> {{contact.phoneNumber}} </td>
                 <td class="action-icon tb-header-actions" >
-                    <mat-icon class="delete-icon">delete</mat-icon>
-                    <mat-icon class="delete-icon" >edit</mat-icon>
+                    <mat-icon class="delete-icon" (click)="deleteContactByID(contact.id)">delete</mat-icon>
+                    <mat-icon class="edit-icon" (click)="editById(contact.id)">edit</mat-icon>
                 </td> 
             </tr>
             
