@@ -45,18 +45,12 @@ export class FormComponent implements OnInit {
     country : new FormControl('India') 
   })
 
-  get fullName() {
-    return this.addContact.get('fullName');
-  }
-
 
 
   cancel(){
     this.router.navigate(["dashboard"]);
   }
-  // addContactDetails(){
-  //   console.warn(this.addContact.value);
-  // }
+
   addContactDetails(){
     console.warn(this.addContact.value,this.Id);
     this.contactService.addNewContact(this.addContact.value).subscribe((data: any) => {
@@ -65,6 +59,7 @@ export class FormComponent implements OnInit {
   }
   updateContact() {
     this.contactService.updateContactById(this.addContact.value, this.Id).subscribe((response: any) => {
+      console.log(this.Id);
       this.router.navigate(["dashboard"]);
     });
   }

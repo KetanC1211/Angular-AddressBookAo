@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {  Router } from '@angular/router';
 import { ContactServicesService } from 'src/app/service/contact-services.service';
+import { Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-dashbaord',
@@ -9,6 +10,8 @@ import { ContactServicesService } from 'src/app/service/contact-services.service
 })
 export class DashbaordComponent implements OnInit {
   allcontactList:Array<any> = [];
+  totalContact:number=0;
+
 
   constructor(private contactService: ContactServicesService, private router: Router) {
   }
@@ -25,6 +28,7 @@ export class DashbaordComponent implements OnInit {
     this.contactService.getAllContacts().subscribe((data:any) => {
       console.log(data);
       this.allcontactList = data.content;
+      this.totalContact = this.allcontactList.length;
     });
   }
 

@@ -13,6 +13,7 @@ import { MatInputModule} from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule} from '@angular/material/select';
 import { HttpClientModule,HttpClient } from '@angular/common/http';
+import {MatBadgeModule} from '@angular/material/badge';
 import { Route } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 
@@ -34,6 +35,7 @@ import { ActivatedRoute } from '@angular/router';
     MatSelectModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

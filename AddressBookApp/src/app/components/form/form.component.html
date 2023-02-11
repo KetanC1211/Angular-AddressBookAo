@@ -1,6 +1,6 @@
 <app-header></app-header>
 <div class="main-formContent">
-    <form [formGroup]="addContact" (ngSubmit)="addContactDetails()">
+    <form [formGroup]="addContact"  (ngSubmit)="addContactDetails()">
         <header>
             <div class="header-text">
             PERSON ADDRESS FORM
@@ -11,9 +11,8 @@
             <div class="text-field">
                 <label for="fullName">Full Name</label>
                 <mat-form-field appearance="outline">
-                    <input matInput placeholder="Enter full Name" name="fullName" formControlName="fullName" pattern="^$">
+                    <input matInput placeholder="Enter full Name" name="fullName" formControlName="fullName" >
                 </mat-form-field>
-                <!-- <span style="color:red ;" *ngIf="fullName && fullName.invalid && fullName.touched">Invalid Input</span> -->
             </div>
             <div class="text-field">
                 <label for="phoneNumber">Phone Number</label>

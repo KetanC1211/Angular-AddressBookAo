@@ -1,8 +1,8 @@
 <app-header></app-header>
 <div class="main-content">
     <div class="header-content">
-        <div class="contact-detail-text">
-            Person Details 
+        <div matBadge="{{totalContact}}" matBadgeOverlap="false" class="contact-detail-text">
+            Person Details
         </div>  
         <button mat-button (click) = "btnClick()">
             <mat-icon>add</mat-icon>
